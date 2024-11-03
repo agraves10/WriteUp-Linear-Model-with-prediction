@@ -37,7 +37,16 @@ The numerical results validate the positive correlation observed in the scatter 
 model.1 <- lm(SIMS~ARM,data=data)
 summary.lm(model.1)
 ```
-The equation  is SIMS = 0.054563 × ARM - 4.095160.   
+The equation  is SIMS = 0.054563 × ARM - 4.095160.  
+
+
+
+```{r}
+basicNN + geom_point() + ggtitle("SIMS vs ARM") + theme(plot.title = element_text(hjust = 0.5, size = 20)) + geom_smooth(method=lm)
+
+```
+
+The data above presents the line of best fit derived from the collected points for SIMS versus ARM. This line indicates which data points are nearest to the expected results.
 
 
 
