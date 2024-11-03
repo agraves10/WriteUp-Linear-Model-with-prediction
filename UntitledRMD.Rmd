@@ -22,7 +22,7 @@ basicNN <- ggplot(data,aes(y=SIMS,x=ARM))
 ```{r}
 basicNN + geom_point() + ggtitle("SIMS vs ARM") + theme(plot.title = element_text(hjust = 0.5, size = 20))
 ```
-This scatter plot indicates a positive correlation, as many of the points trend upward diagonally. The data represents the expected arm strength of the workers, suggesting that most individuals are anticipated to have arm strength ranging from 50 to 100.  
+  This scatter plot indicates a positive correlation, as many of the points trend upward diagonally. The data represents the expected arm strength of the workers, suggesting that most individuals are anticipated to have arm strength ranging from 50 to 100.    
 
 ### Numerical Results
 
@@ -37,7 +37,7 @@ The numerical results validate the positive correlation observed in the scatter 
 model.1 <- lm(SIMS~ARM,data=data)
 summary.lm(model.1)
 ```
-The equation  is SIMS = 0.054563 × ARM - 4.095160.
+The equation  is SIMS = 0.054563 × ARM - 4.095160.   
 
 
 
